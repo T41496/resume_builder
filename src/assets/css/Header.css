@@ -1,0 +1,27 @@
+.pt_header .pt_logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.pt_nav .pt_nav-item {
+  position: relative;
+}
+
+.pt_nav .pt_nav-item::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  background-color: #000000;
+  width: 100%;
+  bottom: -0.2rem;
+  left: 0;
+  border-radius: 9999px;
+  transform: scale(0);
+  transform-origin: center;
+  transition: 0.3s transform;
+}
+.pt_nav .pt_nav-item.active::after,
+.pt_nav .pt_nav-item:hover::after {
+  transform: scaleX(1);
+}

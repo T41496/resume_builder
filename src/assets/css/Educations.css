@@ -1,0 +1,5 @@
+.pt_education-fields {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}

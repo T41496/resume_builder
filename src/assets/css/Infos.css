@@ -1,0 +1,38 @@
+.pt_avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.pt_avatar:hover {
+  filter: blur(1px);
+}
+div:has(> .pt_camera-icon) {
+  position: relative;
+}
+.pt_camera-icon {
+  visibility: visible;
+  position: absolute;
+  width: 23px;
+  left: 100px;
+  bottom: 4px;
+  cursor: pointer;
+}
+@media (max-width: 576px) {
+  .pt_avatar {
+    width: 80px;
+    height: 80px;
+  }
+  .pt_camera-icon {
+    left: 60px;
+  }
+}
+@media (max-width: 375px) {
+  .pt_avatar {
+    width: 70px;
+    height: 70px;
+  }
+  .pt_camera-icon {
+    left: 50px;
+  }
+}

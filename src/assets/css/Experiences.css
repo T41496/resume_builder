@@ -1,0 +1,11 @@
+.pt_experience-fields {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: end;
+}
+@media (max-width: 420px) {
+  .pt_experience-fields br {
+    display: block;
+  }
+}
